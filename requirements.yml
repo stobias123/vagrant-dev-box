@@ -1,0 +1,5 @@
+- src: geerlingguy.docker
+- src: geerlingguy.pip
+- src: secfigo.terraform
+- src: https://github.com/alvistack/ansible-role-perforce
+- src: https://github.com/picotrading/ansible-motd
