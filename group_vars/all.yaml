@@ -5,3 +5,10 @@ motd_info:
   - " CPUs:    ": "{{ ansible_processor_vcpus }}"
   - " RAM:     ": "{{ (ansible_memtotal_mb / 1000) | round(1) }}GB"
   - " More info:     ": "https://github.com/stobias123/vagrant-dev-box"
+pip_install_packages:
+  - awscli
+#  - molecule
+#  - f5-sdk
+  - pyvmomi
+  - pywinrm
+#  - netapp-lib

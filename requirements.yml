@@ -3,3 +3,4 @@
 - src: secfigo.terraform
 - src: https://github.com/alvistack/ansible-role-perforce
 - src: https://github.com/picotrading/ansible-motd
+- src: https://github.com/jlund/ansible-go
