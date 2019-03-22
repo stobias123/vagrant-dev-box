@@ -1,6 +1,11 @@
 Vagrant.configure("2") do |config|
+  ## Specify the base box
   config.vm.box = "stobias123/vagrant_developer_box"
   config.vm.box_version = "0.07"
+
+  ##  source .p4config file in .bashrc
+  config.vm.provision "shell", inline: 'echo "export P4CONFIG=/vagrant/repos/.p4config" >> /home/vagrant/.bashrc'
+  config.vm.provision "shell", inline: 'echo "After you ssh in, please modify the P4USER and P4PASSWD in your .p4config file" >> /etc/motd'
 
   ## Mount the user repos dir
   config.vm.synced_folder '.', '/vagrant/repos', id: "vagrant-root",
